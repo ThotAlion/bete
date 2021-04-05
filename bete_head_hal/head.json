@@ -1,0 +1,28 @@
+{
+	"controllers": {
+		"head": {
+			"port": "auto",
+			"sync_read": true,
+			"attached_motors": ["head"]
+		}
+	},
+    "motorgroups": {
+        "head": ["pan", "tilt"]
+    },
+	"motors": {
+		"pan": {
+			"id": 28,
+			"type": "MX-64",
+			"orientation": "direct",
+			"offset": 0,
+			"angle_limit": [-10,10]
+		},
+		"tilt": {
+			"id": 12,
+			"type": "MX-64",
+			"orientation": "direct",
+			"offset": 0,
+			"angle_limit": [-10,10]
+		}
+    }
+}
